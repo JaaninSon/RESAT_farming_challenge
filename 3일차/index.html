@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Countdown Timer</title>
+   <link rel="stylesheet" href="./style.css">
+   <script defer src="./timer.js"></script>
+</head>
+<body>
+
+   <div class="center">
+      
+      <div class="watchstrap">
+         <ul class="strap-dot">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+      </div>
+
+      <div class="watch">
+         <div class="timer-message "></div>
+
+         <div class="timer">
+            
+            <div class="time-box">
+               <input type="text" id="input-hour" maxlength="2" required placeholder="00"> <span>:</span>
+               <input type="text" id="input-min" maxlength="2" required placeholder="00"> <span>:</span>
+               <input type="text" id="input-sec" maxlength="2" required placeholder="00">
+            </div>   
+
+            <div class="btn-box">
+               <button id="start">START</button>
+               <button id="stop">STOP</button>
+               <button id="reset">RESET</button>
+            </div>
+            
+         </div>
+      </div>
+
+      </div> 
+
+   </div>
+
+</body>
+</html>
