@@ -1,6 +1,7 @@
 (function($){
 
    let cnt = 0;
+   let setId = 0;
 
    const slide = $('.slide-wrap');
 
@@ -24,7 +25,7 @@
    }
 
    function autoTimer(){
-      setInterval(nexCount, 2000);
+      setId = setInterval(nexCount, 2000);
    }
    autoTimer();
 
@@ -32,7 +33,10 @@
       click: function(e){
          e.preventDefault();
          prevCount()
-         console.log('prev');
+         clearInterval(setId);
+      },
+      mouseleave: function(){
+         autoTimer();      
       }
    })
 
@@ -41,6 +45,10 @@
          e.preventDefault();
          nexCount();
          console.log('next');
+         clearInterval(setId);
+      },
+      mouseleave(){
+         autoTimer();
       }
    })
 
