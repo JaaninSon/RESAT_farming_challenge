@@ -23,6 +23,11 @@
       imgSlide();
    }
 
+   function autoTimer(){
+      setInterval(nexCount, 2000);
+   }
+   autoTimer();
+
    $('.prev-btn').on({
       click: function(e){
          e.preventDefault();
