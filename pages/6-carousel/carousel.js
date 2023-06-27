@@ -7,10 +7,10 @@
 
    function imgSlide(){
       slide.stop().animate({left:-100*cnt + '%'}, 1000, function(){
-         if(cnt===4) cnt=0;
+         if(cnt>3) cnt=0;
          if(cnt<0) cnt=3;
-
-         slide.stop().animate({left:-100*cnt + '%'},0)
+         console.log(cnt);
+         slide.stop().animate({left:-100*cnt + '%'}, 0)
       });
    }
 
@@ -30,8 +30,10 @@
    autoTimer();
 
    $('.prev-btn').on({
-      click: function(e){
-         e.preventDefault();
+      mouseenter: function(){
+         clearInterval(setId);
+      },
+      click: function(){
          prevCount()
          clearInterval(setId);
       },
@@ -41,13 +43,14 @@
    })
 
    $('.next-btn').on({
-      click: function(e){
-         e.preventDefault();
-         nexCount();
-         console.log('next');
+      mouseenter: function(){
          clearInterval(setId);
       },
-      mouseleave(){
+      click: function(){
+         nexCount();
+         clearInterval(setId);
+      },
+      mouseleave: function(){
          autoTimer();
       }
    })
