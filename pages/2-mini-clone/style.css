@@ -319,6 +319,7 @@ a {text-decoration: none; color: #384040;}
 .launching-thumbs {
    position: relative;
    z-index: 3;
+   display: flex;
 }
 
 .launching-thumbs::before {
@@ -333,16 +334,49 @@ a {text-decoration: none; color: #384040;}
 }
 
 .launching-wrapper {
+   position: relative;
    z-index: 3;
-   margin-top: 60px;
-   padding-top: 20px;
-   width: 100%;
+   width: 335px;
    height: 271px;
-   display: flex;
+   border-radius: 10%;
+   overflow: hidden;
+   margin-top: 20px;
 }
 
 .launching-banner {
-   width: 335px;
+   position: relative;
+   display: flex;
+   width: 600%;
+
+   margin-left: -100%;
+}
+
+.launching-banner li {
+   width: 100%;
+   height: 271px;
+   display: flex;
+   align-items: center;
+   padding: 40px;
+}
+
+.launching-banner li p {
+   color: #fff;
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 40px;
+}
+
+.banner01 {
+   background-color: rgb(2, 105, 24);
+}
+.banner02 {
+   background-color: rgb(32, 32, 32);
+}
+.banner03 {
+   background-color: rgb(252, 191, 79);
+}
+.banner04 {
+   background-color: rgb(93, 173, 248);
 }
 
 .launching-banner img {
@@ -350,8 +384,66 @@ a {text-decoration: none; color: #384040;}
    border-radius: 15px;
 }
 
+.slide-btn {
+   width: 100%;
+   z-index: 4;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+
+.btn {
+   display: block;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   transition: all .3s;
+}
+
+.btn i {
+   font-size: 50px;
+   color: rgba(255, 255, 255, 0.5);
+}
+
+.btn i:hover {
+   color: #bdbcb8;
+}
+
+.prev-btn {
+   left: 10px;
+}
+
+.next-btn {
+   right: 10px;
+}
+
+.slide-page {
+   position: absolute;
+   z-index: 4;
+   width: 40%;
+   bottom: 20px;
+   right: 15px;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.slide-page .page-btn {
+   display: block;
+   width: 10px;
+   height: 10px;
+   font-size: 0;
+   border-radius: 5px;
+   background: rgba(255, 255, 255, 0.5);
+}
+
+.slide-page .page-btn.on {
+   background-color: #fff;
+}
+
 .launching-info {
    position: relative;
+   margin-top: 23px;
    padding: 66px 0 30px 30px;
 }
 
