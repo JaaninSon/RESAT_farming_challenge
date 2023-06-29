@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Responsive Nav</title>
+   <link href="https://fonts.cdnfonts.com/css/fogtwono5" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="./nav.css">
+   <script defer src="./nav.js"></script>
+</head>
+<body>
+   <div class="wrap">
+      <nav id="nav">
+         
+         <div class="nav-container">
+            <button class="close-btn" onclick="handleCloseBtn()"><i class="fa fa-times"></i></button>
+            <ul>
+               <li>
+                  <a href="#">
+                     <p>RESAT</p>
+                     <p>HOME</p>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <p>Farming</p>
+                     <p>About</p>
+                  </a>   
+               </li>
+               <li>
+                  <a href="#">
+                     <p>Challenge</p>
+                     <p>Contact</p>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">
+                     <p>9th DAYs</p>
+                     <p>FAQ</p>
+                  </a>
+               </li> 
+            </ul>
+         </div>
+
+         <button class="btn" onclick="handleClick()"><i class="fa fa-bars"></i></button>
+         
+      </nav>
+   </div>
+</body>
+</html>
