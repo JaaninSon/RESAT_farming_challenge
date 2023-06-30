@@ -91,7 +91,6 @@ h1 {
 
 .user-info {
    position: absolute;
-   top: 480px; 
-   left: 430px;
    font-size: 12px;
+   bottom: -30px;
 }
