@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Login Pages</title>
+   <link rel="stylesheet" href="./login.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script defer src="./login.js"></script>
+</head>
+<body>
+   <div class="wrap">
+      <div class="login-container">
+         <h1>Login&nbsp;<i class="fa fa-check-square-o"></i></h1>
+         
+         <div class="login-id login-box">
+            <label class="input-id-label">ID :</label>
+            <input type="text" id="username" class="longin-input" placeholder="아이디를 입력하세요." onchange="refreshIdInfo()">
+         </div>
+         
+         <div class="login-pw login-box">
+            <label class="input-pw-label">PASSWORD :</label>
+            <input type="password" id="password" class="longin-input" placeholder="비밀번호를 입력하세요." onchange="refreshPwInfo()">
+         </div>
+
+         <button class="login-btn" onclick="checkUserInfo()">접속</button>
+         <div class="check-message"></div>
+      </div>
+
+      <p class="user-info">
+        아이디 : jaan  | 비밀번호 : 1234 
+      </p>
+   </div>
+</body>
+</html>

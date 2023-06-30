@@ -1,0 +1,97 @@
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 900;
+	font-display: swap;
+	src: local('Pretendard Black'), url('./woff2/Pretendard-Black.woff2') format('woff2'), url('./woff/Pretendard-Black.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Pretendard';
+	font-weight: 500;
+	font-display: swap;
+	src: local('Pretendard Medium'), url('./woff2/Pretendard-Medium.woff2') format('woff2'), url('./woff/Pretendard-Medium.woff') format('woff');
+}
+
+* {margin: 0; padding: 0; box-sizing: border-box; vertical-align: middle;}
+
+.wrap {
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+}
+
+h1 {
+   font-family: 'Pretendard';
+   font-size: 36px;
+   margin: 30px 0 18px 0;
+   color: rgb(112, 89, 240);
+}
+
+.login-container {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 300px;
+   background-color: rgb(247, 196, 252);
+   border-radius: 5px;
+   box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+.login-box {
+   width:200px;
+   margin: 0 0 15px 0;
+   font-family: 'Pretendard';
+   font-weight: 500;
+}
+
+.login-box label {
+   font-weight: 700;
+   margin-bottom: 20px;
+}
+
+.login-box input {
+   width: 200px;
+   height: 30px;
+   border-radius: 15px;
+   padding: 15px;
+   margin-top: 10px;
+   outline: 0;
+}
+
+.login-btn {
+   width: 55px;
+   height: 55px;
+   margin: 10px 0 25px 0;
+   background: rgb(112, 89, 240);
+   color: #fff;
+   border: 0;
+   border-radius: 50%;
+   cursor: pointer;
+   font-weight: 700;
+   font-size: 20px;
+}
+
+.login-btn:hover {
+   background-color: #fff;
+   color: rgb(112, 89, 240);
+}
+
+.check-message {
+   position: absolute;
+   text-align: center;
+   width: 500px;
+   top:-60px;
+   transition: all .3s;
+   color: red;
+   font-size: 28px;
+   font-family: 'Pretendard';
+}
+
+.user-info {
+   position: absolute;
+   top: 480px; 
+   left: 430px;
+   font-size: 12px;
+}
