@@ -14,4 +14,4 @@ Routine of Employment Study And Task
 |6-7일차|이미지 슬라이드(캐러셀) 만들기(1,2)<br> URL : https://jaaninson.github.io/RESAT_farming_challenge/pages/6-carousel/|✅|
 |8일차|이미지 슬라이드(캐러셀) 만들기(3)<br> URL : https://jaaninson.github.io/RESAT_farming_challenge/pages/2-mini-clone|✅|
 |9일차|반응형 네비게이션 메뉴바 만들기<br> URL : https://jaaninson.github.io/RESAT_farming_challenge/pages/9-responsive-nav|✅|
-|10일차|로그인 페이지 만들기||
+|10일차|로그인 페이지 만들기<br> URL : https://jaaninson.github.io/RESAT_farming_challenge/pages/10-login/login.html|✅|
